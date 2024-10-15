@@ -6,7 +6,7 @@ RUN npm install --only=prod
 COPY . .
 
 # Stage 2: Production
-FROM alpine:latest
+FROM alpine:3
 RUN apk add --no-cache nodejs npm
 WORKDIR /app
 COPY --from=builder /app /app
