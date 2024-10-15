@@ -1,0 +1,11 @@
+.gitignore
+.github
+postman
+node_modules
+notes.sh
+Dockerfile
+Makefile
+README.md
+test
+.env
+.env.docker
