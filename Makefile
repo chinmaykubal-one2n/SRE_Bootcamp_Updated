@@ -1,4 +1,4 @@
-.PHONY: install start docker-build docker-run docker-postgres
+.PHONY: install start docker-build docker-run docker-postgres migrate
 
 # Install both production and development dependencies
 install:
@@ -7,6 +7,10 @@ install:
 # Start the application
 start:
 	npm start
+
+# Run migrations
+migrate:
+	npm run migrate
 
 # Build the Docker image
 docker-build:
