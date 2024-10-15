@@ -10,7 +10,7 @@ start:
 
 # Build the Docker image
 docker-build:
-	docker build --platform linux/amd64 -t student-api:1.0.0 .
+	docker build --no-cache --platform linux/amd64 -t student-api:1.0.0 .
 
 # Run the PostgreSQL container
 docker-postgres:
