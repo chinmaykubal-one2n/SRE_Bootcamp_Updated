@@ -11,10 +11,10 @@ This repo will contain all the SRE bootcamp milestones
 
 Make sure you have the following installed on your system:
 
-- Node.js
-- PostgreSQL
-- Make
-- Postman
+- [Node.js] (https://nodejs.org/en/download/package-manager)
+- [PostgreSQL] (https://www.postgresql.org/download/)
+- [Make] (https://www.gnu.org/software/make/#download)
+- [Postman] (https://www.postman.com/downloads/)
 
 ### Follow these steps to set up the Student API:
 
@@ -61,8 +61,8 @@ Start postman and import the student-api.postman_collection.json and start reach
 
 Make sure you have the following installed on your system:
 
-- Docker
-- Make
+- [Docker] (https://docs.docker.com/desktop/install/linux/)
+- [Make] (https://www.gnu.org/software/make/#download)
 
 
 ### Follow these steps to set up the Student API:
