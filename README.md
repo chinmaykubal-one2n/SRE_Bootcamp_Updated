@@ -1,7 +1,7 @@
 
 # SRE Bootcamp
 
-This is a simple Node.js based Student API.
+This repo will contain all the SRE bootcamp milestones
 
 ## Milestone:-  1 - Create a simple REST API Webserver
 
