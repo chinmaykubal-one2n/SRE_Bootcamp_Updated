@@ -52,3 +52,32 @@ make start
 ```
 ###  Start the Postman
 Start postman and import the student-api.postman_collection.json and start reaching the respective endpoints
+
+## Milestone:-  2 - Containerise REST API
+
+
+## Prerequisites
+
+
+Make sure you have the following installed on your system:
+
+- Docker
+- Make
+
+
+### Follow these steps to set up the Student API:
+
+
+###  Build the Docker Image
+```bash
+make docker-build
+```
+
+###  Run the PostgreSQL Container
+```bash
+make docker-postgres
+```
+
+###  Run the Application Container
+```bash
+make docker-run
