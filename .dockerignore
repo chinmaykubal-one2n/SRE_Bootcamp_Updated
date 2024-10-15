@@ -9,3 +9,5 @@ README.md
 test
 .env
 .env.docker
+.git
+.dockerignore
