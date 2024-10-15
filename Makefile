@@ -25,6 +25,13 @@ docker-run:
 	docker run -d --env-file .env.docker --link postgres-container:postgres-container -p 3000:3000 student-api:1.0.0
 
 
+# Start the application using docker-compose with pre-built image
+docker-compose-up:
+	docker compose up -d
+
+# Stop the docker-compose services
+docker-compose-down:
+	docker compose down
 
 
 	
