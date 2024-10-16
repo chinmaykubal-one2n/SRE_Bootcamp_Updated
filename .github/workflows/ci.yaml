@@ -7,11 +7,11 @@ on:
     paths:
       - "server.js"
   workflow_dispatch:
-    inputs:
-      branch:
-        description: 'Branch to run the workflow on'
-        required: true
-        default: '4th-milestone'
+    # inputs:
+    #   branch:
+    #     description: 'Branch to run the workflow on'
+    #     required: true
+    #     default: '4th-milestone'
 
 jobs:
   build:
