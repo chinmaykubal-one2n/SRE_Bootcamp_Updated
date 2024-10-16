@@ -3,7 +3,7 @@ name: CI Pipeline
 on:
   push:
     branches:
-      - main
+      - 4th-milestone
     paths:
       - "server.js"
   workflow_dispatch:
