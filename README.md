@@ -1,9 +1,4 @@
-
-# SRE Bootcamp
-
-This repo will contain all the SRE bootcamp milestones
-
-## Milestone:-  1 - Create a simple REST API Webserver
+## Milestone:-  3 - Setup one-click local development setup
 
 
 ## Prerequisites
@@ -11,57 +6,7 @@ This repo will contain all the SRE bootcamp milestones
 
 Make sure you have the following installed on your system:
 
-- [Node.js](https://nodejs.org/en/download/package-manager)
-- [PostgreSQL](https://www.postgresql.org/download/)
-- [Make](https://www.gnu.org/software/make/#download)
-- [Postman](https://www.postman.com/downloads/)
-
-### Follow these steps to set up the Student API:
-
-```bash
-# Install Dependencies
-make install
-
-# Setup PostgreSQL
-sudo -i -u postgres
-
-psql
-
-CREATE DATABASE postgres;
-CREATE USER postgres WITH PASSWORD 'postgres';
-GRANT ALL PRIVILEGES ON DATABASE postgres TO postgres;
-
-\q
-
-exit
-```
-
-### Run Migrations
-```bash
-npm run migrate
-```
-
-### Run Tests
-```bash
-npm run test
-```
-
-###  Start the API
-```bash
-make start
-```
-###  Start the Postman
-Start postman and import the student-api.postman_collection.json and start reaching the respective endpoints
-
-## Milestone:-  2 - Containerise REST API
-
-
-## Prerequisites
-
-
-Make sure you have the following installed on your system:
-
-- [Docker](https://docs.docker.com/desktop/install/linux/)
+- [Docker](https://www.docker.com/products/docker-desktop)
 - [Make](https://www.gnu.org/software/make/#download)
 
 
@@ -75,9 +20,11 @@ make docker-build
 
 ###  Run the PostgreSQL Container
 ```bash
-make docker-postgres
+make docker-compose-up-postgres-container
 ```
+
 
 ###  Run the Application Container
 ```bash
-make docker-run
+make docker-compose-up-students-api
+```
