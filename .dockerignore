@@ -11,3 +11,4 @@ test
 .env.docker
 .git
 .dockerignore
+docker-compose.yml

@@ -7,12 +7,13 @@ COPY . .
 
 # Stage 2: Production
 FROM alpine:3
-RUN apk add --no-cache nodejs npm
+RUN apk add --no-cache nodejs npm postgresql-client
 WORKDIR /app
 COPY --from=builder /app /app
+RUN chmod +x wait-for-postgres.sh
 ENV NODE_ENV=production
 EXPOSE 3000
-CMD ["sh", "-c", "npm run migrate && npm start"]
+CMD ["sh", "-c", "/app/wait-for-postgres.sh && npm start"]
 
 
  
