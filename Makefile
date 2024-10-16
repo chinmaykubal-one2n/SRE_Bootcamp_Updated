@@ -1,16 +1,5 @@
-.PHONY: install start docker-build docker-run docker-postgres migrate migrate-postgres-container docker-compose-up-postgres-container docker-compose-down-postgres-container docker-compose-up-students-api docker-compose-down-students-api
+.PHONY: docker-build docker-run docker-postgres docker-compose-up-postgres-container docker-compose-down-postgres-container docker-compose-up-students-api docker-compose-down-students-api
 
-# Install both production and development dependencies
-install:
-	npm install
-
-# Start the application
-start:
-	npm start
-
-# Run migrations
-migrate:
-	npm run migrate
 
 # Build the Docker image
 docker-build:
@@ -27,10 +16,6 @@ docker-run:
 # Start the postgres-container service
 docker-compose-up-postgres-container:
 	docker compose up postgres-container -d
-
-# Run migrations with the specific .env file
-# migrate-postgres-container:
-# 	npm run migrate
 
 # Start the students-api service
 docker-compose-up-students-api:
