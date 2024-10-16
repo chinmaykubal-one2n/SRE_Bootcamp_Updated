@@ -12,3 +12,4 @@ test
 .git
 .dockerignore
 docker-compose.yml
+eslint.config.js
